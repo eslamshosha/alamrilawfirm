@@ -141,104 +141,239 @@
     <!-- breadcrumb section -->
     <section class="breadcrumb-sec">
       <div class="container">
-        <h2 class="page-head">أساسيات القانون الدولي</h2>
+        <h2 class="page-head">اتمام الطلب</h2>
         <ol class="breadcrumb">
           <li class="item-home">
             <a class="bread-link bread-home aFixx" href="index.html"
               >الرئيسية
             </a>
           </li>
-          <li class="item-home">
-            <a class="bread-link" href="courses.html">الدورات </a>
-          </li>
           <li class="active item-23">
-            <span class="bread-current"> أساسيات القانون الدولي</span>
+            <span class="bread-current"> اتمام الطلب</span>
           </li>
         </ol>
       </div>
     </section>
     <!-- breadcrumb section -->
-    <!-- courses-details-section -->
-    <section class="single-page">
+    <!-- checkout-section -->
+    <section class="checkout-section">
       <div class="container">
-        <div class="sec-head">أساسيات القانون الدولي</div>
-        <div class="courses-details">
-          <div class="courses-details-content">
-            <figure class="services-post-img loading-img">
-              <img
-                data-src="images/service-page/01.jpg"
-                alt=""
-                class="img-fluid lazy-img"
-              />
-            </figure>
-            <div class="courses-details-pargh">
-              <p>
-                خلافاَ للإعتقاد السائد فإن لوريم إيبسوم ليس نصاَ عشوائياً، بل إن
-                له جذور في الأدب اللاتيني الكلاسيكي منذ العام 45 قبل الميلاد،
-                مما يجعله أكثر من 2000 عام في القدم. قام البروفيسور "ريتشارد ماك
-                لينتوك" (Richard McClintock) وهو بروفيسور اللغة اللاتينية في
-                جامعة هامبدن-سيدني في فيرجينيا بالبحث عن أصول كلمة لاتينية غامضة
-                في نص لوريم إيبسوم وهي "consectetur"، وخلال تتبعه لهذه الكلمة في
-                الأدب اللاتيني اكتشف المصدر الغير قابل للشك.
-              </p>
+        <div class="checkout-grid">
+          <div class="checkout-flex">
+            <div class="checkout-cont">
+              <div class="checkout-header">
+                <i class="las la-map-marked-alt"></i>
+                <span class="checkout-name">عنوان الشحن</span>
+              </div>
+              <div class="add-address-cont">
+                <button
+                  class="add-select-address"
+                  data-toggle="modal"
+                  data-target="#custom-modal"
+                >
+                  <i class="las la-address-book"></i>
+                  اختر من دفتر العناوين
+                </button>
+                <div class="add-select-address active">
+                  <i class="las la-plus"></i>
+                  اضافة عنوان جديد
+                </div>
+              </div>
+              <form action="">
+                <div class="model-input">
+                  <div class="form-group">
+                    <label class="form-label required">اسم العنوان</label>
+                    <input type="text" class="form-input custom-input" />
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label required">المدينة</label>
+                    <input type="text" class="form-input custom-input" />
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label required"> رقم الجوال</label>
+                    <input type="tel" class="form-input custom-input" />
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label required">وصف مميز للعنوان</label>
+                    <input type="text" class="form-input custom-input" />
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label required"
+                      >الموقع على الخريطة</label
+                    >
+                    <div>
+                      <img src="images/map.png" class="img-fluid" />
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="checkout-cont">
+              <div class="checkout-header">
+                <i class="las la-credit-card"></i>
+                <span class="checkout-name">طريقة الدفع</span>
+              </div>
+              <div class="payment-methods">
+                <label
+                  class="payment-method"
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title="فيزا"
+                >
+                  <input type="radio" name="payment-methods" value="01" />
+                  <div class="payment-img loading-img">
+                    <img class="lazy-img" data-src="images/checkout/01.png" />
+                  </div>
+                  <span class="payment-name">فيزا</span>
+                </label>
+                <label
+                  class="payment-method"
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title="ماستر كارد"
+                >
+                  <input type="radio" name="payment-methods" value="02" />
+                  <div class="payment-img loading-img">
+                    <img class="lazy-img" data-src="images/checkout/02.png" />
+                  </div>
+                  <span class="payment-name">ماستر كارد</span>
+                </label>
+                <label
+                  class="payment-method"
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title="ابل باي"
+                >
+                  <input type="radio" name="payment-methods" value="03" />
+                  <div class="payment-img loading-img">
+                    <img class="lazy-img" data-src="images/checkout/03.png" />
+                  </div>
+                  <span class="payment-name">ابل باي</span>
+                </label>
+                <label
+                  class="payment-method"
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title="اس تي سي باي"
+                >
+                  <input type="radio" name="payment-methods" value="04" />
+                  <div class="payment-img loading-img">
+                    <img class="lazy-img" data-src="images/checkout/04.png" />
+                  </div>
+                  <span class="payment-name">اس تي سي باي</span>
+                </label>
+                <label
+                  class="payment-method"
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title="مدى"
+                >
+                  <input type="radio" name="payment-methods" value="05" />
+                  <div class="payment-img loading-img">
+                    <img class="lazy-img" data-src="images/checkout/05.png" />
+                  </div>
+                  <span class="payment-name">مدى</span>
+                </label>
+              </div>
             </div>
           </div>
-          <div class="courses-details-info">
-            <table class="custom-table">
-              <tbody>
-                <tr>
-                  <td class="table-name">التصنيف</td>
-                  <td class="table-value">القانون الدولي</td>
-                </tr>
-                <tr>
-                  <td class="table-name">تاريخ البداية</td>
-                  <td class="table-value">20 فبراير 2023</td>
-                </tr>
-                <tr>
-                  <td class="table-name">المدة</td>
-                  <td class="table-value">6 ساعات</td>
-                </tr>
-                <tr>
-                  <td class="table-name">العدد المتبقي للحجز</td>
-                  <td class="table-value">5</td>
-                </tr>
-                <tr>
-                  <td class="table-name">النقاط المكتسبة</td>
-                  <td class="table-value">120</td>
-                </tr>
-              </tbody>
-            </table>
-            <div class="courses-details-price">
-              <span class="new-price">2500 ر.س</span>
-              <span class="old-price">2500 ر.س</span>
-              <span class="hint">خصم 15%</span>
-            </div>
-            <button
-              class="custom-btn"
-              data-toggle="modal"
-              data-target="#custom-modal"
-            >
-              اشترك الآن
-            </button>
-            <div class="custom-social">
-              <span class="custom-social-text"> مشاركة عبر </span>
-              <div class="social">
-                <a href="#" class="social-link">
-                  <i class="lab la-linkedin-in"></i>
-                </a>
-                <a href="#" class="social-link">
-                  <i class="lab la-twitter"></i>
-                </a>
-                <a href="#" class="social-link">
-                  <i class="lab la-facebook-f"></i>
-                </a>
+          <div class="checkout-flex">
+            <div class="checkout-cont">
+              <div class="checkout-header">
+                <i class="las la-shopping-cart"></i>
+                <span class="checkout-name">سلة الشراء</span>
               </div>
+              <div class="checkout-info">
+                <div class="checkout-product">
+                  <figure>
+                    <img src="images/products-post/01.jpg" class="img-fluid" />
+                  </figure>
+                  <div class="checkout-info-flex">
+                    <span class="checkout-info-name"
+                      >الوجيز في القانون الإداري السعودي</span
+                    >
+                    <span class="checkout-info-points"
+                      >النقاط المكتسبة:
+                      <span>120</span>
+                    </span>
+                  </div>
+                </div>
+                <span class="checkout-price">
+                  <span class="product-counter">x <span>1</span></span>
+                  2500 ر.س
+                </span>
+              </div>
+            </div>
+            <div class="checkout-input-cont">
+              <div class="checkout-input-group">
+                <div class="form-group">
+                  <label class="form-label"> كوبون التخفيض</label>
+                  <div class="form-input-relative">
+                    <input type="text" class="checkout-input" />
+                    <button class="checkout-btn">تطبيق</button>
+                  </div>
+                </div>
+              </div>
+              <div class="checkout-input-group">
+                <div class="form-group">
+                  <label class="form-label">
+                    المحفظة<span> (الرصيد المتاح 250 ر.س)</span></label
+                  >
+                  <div class="form-input-relative">
+                    <input
+                      type="text"
+                      class="checkout-input"
+                      placeholder="اضف القيمة المراد سحبها من المحفظة"
+                    />
+                    <button class="checkout-btn">سحب</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="checkout-content product-table">
+              <table class="checkout-table">
+                <tbody>
+                  <tr>
+                    <td class="table-name">تكلفة الطلب</td>
+                    <td class="table-price">2500 ر.س</td>
+                  </tr>
+                  <tr>
+                    <td class="table-name">خصم كوبون التخفيض</td>
+                    <td class="table-price">50 ر.س</td>
+                  </tr>
+                  <tr>
+                    <td class="table-name">إجمالي التكلفة بعد الخصم</td>
+                    <td class="table-price">2450 ر.س</td>
+                  </tr>
+                  <tr>
+                    <td class="table-name">رسوم الشحن</td>
+                    <td class="table-price">20 ر.س</td>
+                  </tr>
+                  <tr>
+                    <td class="table-name">ضريبة القيمة المضافة</td>
+                    <td class="table-price">370.5 ر.س</td>
+                  </tr>
+                  <tr>
+                    <td class="table-name">إجمالي التكلفة بالضريبة</td>
+                    <td class="table-price">2840.5 ر.س</td>
+                  </tr>
+                  <tr>
+                    <td class="table-name">قيمة رصيد المحفظة المستخدم</td>
+                    <td class="table-price">250 ر.س</td>
+                  </tr>
+                  <tr class="table-total">
+                    <td class="table-name">إجمالي المستحق</td>
+                    <td class="table-price">2590.5 ر.س</td>
+                  </tr>
+                </tbody>
+              </table>
+              <button class="next-btn">دفع</button>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- courses-details-section -->
+    <!-- checkout-section -->
     <!-- footer section -->
     <footer>
       <div class="container">
@@ -379,65 +514,67 @@
       <i class="las la-arrow-up"></i>
     </a>
     <!-- arrow to top -->
+
     <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/swiper.min.js"></script>
     <script src="js/script.js"></script>
-
     <!-- Start custom Modal -->
-    <div class="modal fade custom-modal" id="custom-modal" aria-hidden="true">
+    <div
+      class="modal fade custom-modal address-modal"
+      id="custom-modal"
+      aria-hidden="true"
+    >
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title">نموذج الاشتراك بالدورة</h5>
+            <h5 class="modal-title">دفتر العناوين</h5>
             <button type="button" class="close" data-dismiss="modal">
               <i class="las la-times"></i>
             </button>
           </div>
           <div class="modal-body">
-            <form action="">
-              <div class="model-input">
-                <div class="form-group">
-                  <label class="form-label required">الاسم الاول</label>
-                  <input type="text" class="form-input custom-input" />
-                </div>
-                <div class="form-group">
-                  <label class="form-label required">الاسم الاخير</label>
-                  <input type="text" class="form-input custom-input" />
-                </div>
-                <div class="form-group">
-                  <label class="form-label required"> رقم الجوال</label>
-                  <input type="tel" class="form-input custom-input" />
-                </div>
-                <div class="form-group">
-                  <label class="form-label required">المؤهل</label>
-                  <div class="form-input-relative">
-                    <i class="las la-angle-down angle-select"></i>
-                    <select class="select-modal" name="">
-                      <option disabled selected hidden>اختر من القائمة</option>
-                      <option value="two">ليسانس</option>
-                      <option value="three">ليسانس</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label class="form-label required">الجنس</label>
-                  <div class="form-input-relative">
-                    <i class="las la-angle-down angle-select"></i>
-                    <select class="select-modal" name="">
-                      <option disabled selected hidden>اختر من القائمة</option>
-                      <option value="one">ذكر</option>
-                      <option value="two">انثى</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="btn-cont">
-                  <button class="custom-btn">اشترك</button>
-                </div>
+            <div class="item_address">
+              <p class="item_address_name">الرياض</p>
+              <p class="item_address_name">الملز</p>
+              <p class="item_address_name">صلاح الدين الأيوبي</p>
+              <p class="item_address_name">
+                24.667277670180287, 46.74848448650808
+              </p>
+              <div class="btn_group">
+                <button class="btn_address btn_color1">
+                  <span>تعيين إفتراضي</span><i class="las la-check"></i>
+                </button>
+                <button class="btn_address btn_color2">
+                  <span>تعديل</span><i class="las la-pen"></i>
+                </button>
+                <button class="btn_address btn_color3">
+                  <span>حذف</span><i class="las la-trash"></i>
+                </button>
               </div>
-            </form>
+            </div>
+            <div class="item_address">
+              <p class="item_address_name">الرياض</p>
+              <p class="item_address_name">الملز</p>
+              <p class="item_address_name">صلاح الدين الأيوبي</p>
+              <p class="item_address_name">
+                24.667277670180287, 46.74848448650808
+              </p>
+              <div class="btn_group">
+                <button class="btn_address btn_color1">
+                  <span>تعيين إفتراضي</span><i class="las la-check"></i>
+                </button>
+                <button class="btn_address btn_color2">
+                  <span>تعديل</span><i class="las la-pen"></i>
+                </button>
+                <button class="btn_address btn_color3">
+                  <span>حذف</span><i class="las la-trash"></i>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>

@@ -203,6 +203,26 @@ $(document).ready(function () {
       },
     },
   });
+  ///////// **post-slider** /////////
+  var postSlider = new Swiper(".post-slider .swiper-container", {
+    loop: true,
+    autoplay: true,
+    preloadImages: false,
+    slidesPerView: 1,
+    pagination: {
+      el: ".post-slider .swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".post-slider .swiper-btn-next",
+      prevEl: ".post-slider .swiper-btn-prev",
+    },
+    on: {
+      init: function (swiper) {
+        lazyLoad();
+      },
+    },
+  });
   ////////////** footer transfer into accordion **//////////
 
   if ($(window).width() <= 767) {
