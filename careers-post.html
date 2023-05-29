@@ -10,14 +10,6 @@
     <link rel="stylesheet" href="css/line-awesome.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/bootstrap-rtl.min.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.1/dist/sweetalert2.min.css"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/animate.css" />
     <link rel="stylesheet" href="css/swiper.min.css" />
@@ -145,7 +137,7 @@
     <!-- breadcrumb section -->
     <section class="breadcrumb-sec">
       <div class="container">
-        <h2 class="page-head">دراسة قضية</h2>
+        <h2 class="page-head">التوظيف</h2>
         <ol class="breadcrumb">
           <li class="item-home">
             <a class="bread-link bread-home aFixx" href="index.html"
@@ -153,172 +145,46 @@
             </a>
           </li>
           <li class="item-home">
-            <a class="bread-link" href="services-post.html"> دراسة قضية</a>
+            <a class="bread-link" href="#">التوظيف </a>
           </li>
           <li class="active item-23">
-            <span class="bread-current"> طلب خدمة</span>
+            <span class="bread-current"> مستشار قانوني </span>
           </li>
         </ol>
       </div>
     </section>
     <!-- breadcrumb section -->
-    <!-- services-request-section -->
+    <!-- news-post-section -->
     <section class="single-page">
       <div class="container">
-        <div class="wizard card-like">
-          <form>
-            <h4 class="request-form-head">طلب خدمة - دراسة قضية</h4>
-            <div class="wizard-header">
-              <div class="steps">
-                <div class="steps-progress">
-                  <ul class="progressbar list-unstyled wizard-step">
-                    <li class="active" id="activeStep-1">
-                      <span class="stepnumber">
-                        <span class="step-number">1</span>
-                        <span class="step-name">معلومات العميل</span>
-                      </span>
-                    </li>
-                    <li id="activeStep-2">
-                      <span class="stepnumber">
-                        <span class="step-number">2</span>
-                        <span class="step-name">معلومات الطلب</span>
-                      </span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
+        <div class="careers-post-cont">
+          <div class="careers-post-box">
+            <h2 class="careers-head">الوظائف المتاحة</h2>
+            <div class="careers-span">مطلوب مستشار قانوني</div>
+            <div class="careers-pargh">
+              يشترط خبره لاتقل عن 20 عاما منها عالاقل 5 سنوات متصله بمكاتب
+              المحاماه والاستشارات القانونيه بالسعوديه، ويفضل الحصول علي درجه
+              الدكتوراه في القانون
             </div>
-            <div class="wizard-body">
-              <div class="step initial active" id="step_1">
-                <div class="group-input">
-                  <div class="group-input-flex">
-                    <div class="form-group">
-                      <label class="form-label required">الاسم</label>
-                      <input
-                        type="text"
-                        class="form-input"
-                        placeholder="الأول"
-                      />
-                    </div>
-                    <div class="form-group">
-                      <input
-                        type="text"
-                        class="form-input"
-                        placeholder="الأخير"
-                      />
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <label class="form-label required"> رقم التواصل</label>
-                    <input type="tel" class="form-input" />
-                  </div>
-                </div>
-                <div class="wizard-btn-cont">
-                  <button
-                    type="button"
-                    class="btn btn-irv next-btn"
-                    onclick="activeStep($(this), 2)"
-                  >
-                    التالي
-                  </button>
-                </div>
-              </div>
-              <div class="step" id="step_2">
-                <div class="group-input">
-                  <div class="form-group">
-                    <label class="form-label required">نوع القضية</label>
-                    <div class="form-input-relative">
-                      <i class="las la-angle-down angle-select"></i>
-                      <select class="select_input" name="">
-                        <option disabled selected hidden>
-                          اختر من القائمة
-                        </option>
-                        <option value="two">عامة</option>
-                        <option value="three">عامة</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <label class="form-label required"
-                      >هل يوجد دعوى قضائية قائمة؟</label
-                    >
-                    <div class="form-input-relative">
-                      <i class="las la-angle-down angle-select"></i>
-                      <select class="select_input" name="">
-                        <option disabled selected hidden>
-                          اختر من القائمة
-                        </option>
-                        <option value="two">نعم</option>
-                        <option value="three">لا</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <label class="form-label required"> اسم المدعي </label>
-                    <input type="text" class="form-input" />
-                  </div>
-                  <div class="form-group">
-                    <label class="form-label required"> اسم المدعى عليه </label>
-                    <input type="text" class="form-input" />
-                  </div>
-                  <div class="form-group full-grid">
-                    <label class="form-label required"> وصف وشرح القضية </label>
-                    <textarea class="form-input"></textarea>
-                  </div>
-                  <div class="form-group full-grid">
-                    <label class="form-label required"> الطلبات </label>
-                    <textarea
-                      class="form-input"
-                      placeholder="رغب من شركة عبدالعزيز بن ظافر العمري للمحاماه القيام بالتالي:&#10;1.&#10;2.&#10;3."
-                    ></textarea>
-                  </div>
-                  <div class="form-group full-grid">
-                    <label class="form-label required">
-                      ارفاق الملفات والمستندات (ان وجدت)
-                    </label>
-                    <label class="custom-file-upload">
-                      <input type="file" class="upload-change" />
-                      <span class="upload-btn file-txt" data-title=""></span>
-                    </label>
-                  </div>
-                </div>
-                <div class="request-price-cont">
-                  <table class="request-price">
-                    <tbody>
-                      <tr>
-                        <td>
-                          <span class="price-name">سعر الخدمة</span>
-                        </td>
-                        <td>
-                          <span class="price-number">2500 ر.س</span>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <div class="wizard-btn-cont">
-                  <button
-                    type="button"
-                    class="btn btn-irv btn-irv-default prev-btn"
-                    onclick="activeStep($(this), 1)"
-                  >
-                    رجوع
-                  </button>
-                  <button
-                    type="button"
-                    class="btn next-btn services-request-submit"
-                  >
-                    تأكيد الطلب
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="wizard-footer"></div>
-          </form>
+          </div>
+          <div class="careers-list-cont">
+            <h4 class="careers-list-head">المميزات</h4>
+            <ul class="careers-list list-unstyled">
+              <li>رواتب مجزيه تحدد بالمقابلات</li>
+              <li>اقامه</li>
+              <li>سكن</li>
+              <li>تاشيره</li>
+              <li>تذاكر طيران</li>
+              <li>
+                عند التقديم للوظيفه تأكد من ارسال السيرة الذاتية كاملة البيانات
+                حيث ان السيرة الذاتية الكاملة تزيد من فرص القبول بالعمل
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
-    <!-- services-request-section -->
+    <!-- news-post-section -->
     <!-- footer section -->
     <footer>
       <div class="container">
@@ -459,24 +325,10 @@
       <i class="las la-arrow-up"></i>
     </a>
     <!-- arrow to top -->
-
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.1/dist/sweetalert2.all.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/swiper.min.js"></script>
     <script src="js/script.js"></script>
-    <script>
-      $(".services-request-submit").click(function () {
-        Swal.fire({
-          icon: "success",
-          title: "سيتم دراسة القضية والرد على طلبكم خلال 5 أيام عمل",
-          text: "شكرا لوجودك ضمن عملائنا، نسعد بخدمتكم",
-          confirmButtonText: "تفاصيل الطلب",
-          showCloseButton: true,
-        });
-      });
-    </script>
   </body>
 </html>

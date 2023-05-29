@@ -345,7 +345,24 @@ $(document).ready(function () {
     $parentElm.find(".qty-input").val(value);
   });
   lazyLoad();
+
   $('[data-toggle="tooltip"]').tooltip();
+
+  const dateExists = document.getElementsByClassName("selector").length > 0;
+  if (dateExists) {
+    $(".selector").flatpickr({});
+    $(".select-date").flatpickr({
+      defaultDate: "today",
+    });
+  }
+
+  $(".other-option input:radio").change(function () {
+    if (this.checked) {
+      console.log("1");
+      $(".other-option-input input").prop('disabled', false);;
+      $(".other-option-input input").focus();
+    }
+  });
 });
 //lazy load
 
@@ -419,7 +436,7 @@ $(".custom-file-upload .upload-change").change(function () {
   } else {
     file_val = $(this).prop("files")[0].name;
   }
-  $(".file-txt").html(file_val);
+  $(this ).next().html(file_val);
 });
 //otp code animation
 $(".otp-form *:input[type!=hidden]:first").focus();
