@@ -359,9 +359,27 @@ $(document).ready(function () {
   $(".other-option input:radio").change(function () {
     if (this.checked) {
       console.log("1");
-      $(".other-option-input input").prop('disabled', false);;
+      $(".other-option-input input").prop("disabled", false);
       $(".other-option-input input").focus();
     }
+  });
+
+  // collapse~~~~~~~~
+  $(".btn_collapse_").click(function () {
+    const toggle = $(this).next(".toggle_collapse");
+    $(toggle)
+      .stop()
+      .slideToggle("slow")
+
+      .prev(".color_toggle")
+      .toggleClass("poen_co");
+    $(toggle)
+      .prev()
+      .children()
+      .children(".backg_toggle")
+      .toggleClass("poen_backg");
+    $(toggle).parent().prev(".color_toggle").toggleClass("poen_co");
+    $(this).children().children(".bar--horizontal").toggleClass("is-active");
   });
 });
 //lazy load
@@ -436,7 +454,7 @@ $(".custom-file-upload .upload-change").change(function () {
   } else {
     file_val = $(this).prop("files")[0].name;
   }
-  $(this ).next().html(file_val);
+  $(this).next().html(file_val);
 });
 //otp code animation
 $(".otp-form *:input[type!=hidden]:first").focus();
@@ -493,16 +511,20 @@ if (classExists) {
       m = "59";
     }
     document.getElementById("counter").innerHTML = m + ":" + s;
-    setTimeout(startTimer, 1000);
-  }
-
-  function checkSecond(sec) {
-    if (sec < 10 && sec >= 0) {
-      sec = "0" + sec;
-    } // add zero in front of numbers < 10
-    if (sec < 0) {
-      sec = "59";
+    var timerRef = setTimeout(startTimer, 1000);
+    if ((s == 0) & (m == 0)) {
+      document.getElementById("counter").innerHTML = "time up";
+      clearTimeout(timerRef);
+      return;
     }
-    return sec;
+    function checkSecond(sec) {
+      if (sec < 10 && sec >= 0) {
+        sec = "0" + sec;
+      } // add zero in front of numbers < 10
+      if (sec < 0) {
+        sec = "59";
+      }
+      return sec;
+    }
   }
 }
