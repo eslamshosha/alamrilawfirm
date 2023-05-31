@@ -10,10 +10,6 @@
     <link rel="stylesheet" href="css/line-awesome.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/bootstrap-rtl.min.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/animate.css" />
     <link rel="stylesheet" href="css/swiper.min.css" />
@@ -141,6 +137,7 @@
     <!-- breadcrumb section -->
     <section class="breadcrumb-sec">
       <div class="container">
+        <h2 class="page-head">حسابي</h2>
         <ol class="breadcrumb">
           <li class="item-home">
             <a class="bread-link bread-home aFixx" href="index.html"
@@ -148,7 +145,7 @@
             </a>
           </li>
           <li class="active item-23">
-            <span class="bread-current"> تسجيل جديد</span>
+            <span class="bread-current"> حسابي</span>
           </li>
         </ol>
       </div>
@@ -157,87 +154,237 @@
     <!-- contact-section -->
     <section class="single-page">
       <div class="container">
-        <div class="form-cont">
-          <h2 class="form-head wow fadeInDown" wow-data-delay="5s">
-            تسجيل جديد
-          </h2>
-          <form action="">
-            <div class="group-input grid-group custom-tel">
-              <div class="form-group">
-                <label class="form-label required">الاسم الأول</label>
-                <input type="text" class="form-input custom-input" />
-              </div>
-              <div class="form-group">
-                <label class="form-label required">الاسم الأخير</label>
-                <input type="text" class="form-input custom-input" />
-              </div>
-              <div class="form-group">
-                <label class="form-label required">رقم الجوال</label>
-                <div class="form-input-relative">
-                  <input type="tel" class="tel-input form-input custom-input" />
-                  <span class="tel-lang"> 996+ </span>
+        <div class="account-cont">
+          <div class="account-sidebar-cont">
+            <div class="account-sidebar">
+              <ul class="account-list">
+                <li>
+                  <a href="edit-user.html" class="account-ancor">
+                    <i class="las la-user"></i>
+                    <span>تعديل بيانات الحساب</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="book-appointment-edit.html"
+                    class="account-ancor active"
+                  >
+                    <i class="las la-calendar"></i>
+                    <span>حجوزاتي</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="account-ancor">
+                    <i class="las la-clipboard-list"></i>
+                    <span>طلباتي</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="account-ancor">
+                    <i class="las la-bell"></i>
+                    <span>الإشعارات</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="account-ancor">
+                    <i class="las la-address-book"></i>
+                    <span>دفتر العناوين</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="account-ancor">
+                    <i class="las la-gift"></i>
+                    <span>نقاطي</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="account-ancor">
+                    <i class="las la-wallet"></i>
+                    <span>المحفظة</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="account-ancor">
+                    <i class="las la-sign-out-alt"></i>
+                    <span>تسجيل خروج</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="table-cont">
+            <h2 class="form-head wow fadeInDown" wow-data-delay="5s">
+              حجوزاتي
+            </h2>
+            <ul class="nav nav-tabs custom-tabs" id="myTab" role="tablist">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  id="table1-tab"
+                  data-toggle="tab"
+                  href="#table1"
+                  role="tab"
+                  aria-controls="table1"
+                  aria-selected="true"
+                  ><span> الأخبار </span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  id="table2-tab"
+                  data-toggle="tab"
+                  href="#table2"
+                  role="tab"
+                  aria-controls="table2"
+                  aria-selected="false"
+                  ><span>الإعلانات</span>
+                </a>
+              </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+              <div
+                class="tab-pane fade show active"
+                id="table1"
+                role="tabpanel"
+                aria-labelledby="table1-tab"
+              >
+                <div class="table-groub table-responsive">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th colspan="2">رقم الحجز</th>
+                        <th colspan="3">تاريخ الإنشاء</th>
+                        <th colspan="2">نوع الحجز</th>
+                        <th colspan="3">تاريخ ووقت الحجز</th>
+                        <th colspan="2">حالة الحجز</th>
+                        <th colspan="2">عرض التفاصيل</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td colspan="2">5025709</td>
+                        <td colspan="3">2023/01/26 - 13:42</td>
+                        <td colspan="2">حضوري</td>
+                        <td colspan="3">2023/01/26 - 13:42</td>
+                        <td colspan="2">في الانتظار</td>
+                        <td colspan="2" class="text-center">
+                          <a
+                            href="booking-appointment-details.html"
+                            class="table-show-link"
+                          >
+                            <i class="las la-eye"></i>
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">5025709</td>
+                        <td colspan="3">2023/01/26 - 13:42</td>
+                        <td colspan="2">حضوري</td>
+                        <td colspan="3">2023/01/26 - 13:42</td>
+                        <td colspan="2">في الانتظار</td>
+                        <td colspan="2" class="text-center">
+                          <a href="#" class="table-show-link">
+                            <i class="las la-eye"></i>
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">5025709</td>
+                        <td colspan="3">2023/01/26 - 13:42</td>
+                        <td colspan="2">حضوري</td>
+                        <td colspan="3">2023/01/26 - 13:42</td>
+                        <td colspan="2">في الانتظار</td>
+                        <td colspan="2" class="text-center">
+                          <a href="#" class="table-show-link">
+                            <i class="las la-eye"></i>
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">5025709</td>
+                        <td colspan="3">2023/01/26 - 13:42</td>
+                        <td colspan="2">حضوري</td>
+                        <td colspan="3">2023/01/26 - 13:42</td>
+                        <td colspan="2">في الانتظار</td>
+                        <td colspan="2" class="text-center">
+                          <a href="#" class="table-show-link">
+                            <i class="las la-eye"></i>
+                          </a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
               </div>
-              <div class="form-group">
-                <label class="form-label required">البريد الإلكتروني</label>
-                <input type="email" class="form-input custom-input" />
-              </div>
-              <div class="form-group">
-                <label class="form-label required">الجنس</label>
-                <div class="form-input-relative">
-                  <i class="las la-angle-down angle-select"></i>
-                  <select class="select_input custom-input" name="">
-                    <option disabled selected hidden>اختر من القائمة</option>
-                    <option value="one">ذكر</option>
-                    <option value="two">انثي</option>
-                  </select>
-                </div>
-              </div>
-              <div class="form-group">
-                <label class="form-label required">المدينة</label>
-                <div class="form-input-relative">
-                  <i class="las la-angle-down angle-select"></i>
-                  <select class="select_input custom-input" name="">
-                    <option disabled selected hidden>اختر من القائمة</option>
-                    <option value="one">sa</option>
-                    <option value="two">sa</option>
-                  </select>
-                </div>
-              </div>
-              <div class="form-group">
-                <label class="form-label required">كلمة المرور</label>
-                <div class="form-input-relative">
-                  <label class="password-show">
-                    <input type="checkbox" onchange="showPass(this)" />
-                    <i class="las la-eye"></i>
-                  </label>
-                  <input type="password" class="form-input custom-input" />
-                </div>
-              </div>
-              <div class="form-group">
-                <label class="form-label required">تأكيد كلمة المرور</label>
-                <div class="form-input-relative">
-                  <label class="password-show">
-                    <input type="checkbox" onchange="showPass(this)" />
-                    <i class="las la-eye"></i>
-                  </label>
-                  <input type="password" class="form-input custom-input" />
+              <div
+                class="tab-pane fade"
+                id="table2"
+                role="tabpanel"
+                aria-labelledby="table2-tab"
+              >
+                <div class="table-groub table-responsive">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th colspan="2">رقم الطلب</th>
+                        <th colspan="3">تاريخ ووقت الإنشاء</th>
+                        <th colspan="4">اسم الدورة</th>
+                        <th colspan="3">سعر الدورة</th>
+                        <th colspan="2">عرض التفاصيل</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td colspan="2">5025709</td>
+                        <td colspan="3">2023/01/26 - 13:42</td>
+                        <td colspan="4">أساسيات القانون الدولي</td>
+                        <td colspan="3">2500 ر.س</td>
+                        <td colspan="2" class="text-center">
+                          <a href="#" class="table-show-link">
+                            <i class="las la-eye"></i>
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">5025709</td>
+                        <td colspan="3">2023/01/26 - 13:42</td>
+                        <td colspan="4">أساسيات القانون الدولي</td>
+                        <td colspan="3">2500 ر.س</td>
+                        <td colspan="2" class="text-center">
+                          <a href="#" class="table-show-link">
+                            <i class="las la-eye"></i>
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">5025709</td>
+                        <td colspan="3">2023/01/26 - 13:42</td>
+                        <td colspan="4">أساسيات القانون الدولي</td>
+                        <td colspan="3">2500 ر.س</td>
+                        <td colspan="2" class="text-center">
+                          <a href="#" class="table-show-link">
+                            <i class="las la-eye"></i>
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">5025709</td>
+                        <td colspan="3">2023/01/26 - 13:42</td>
+                        <td colspan="4">أساسيات القانون الدولي</td>
+                        <td colspan="3">2500 ر.س</td>
+                        <td colspan="2" class="text-center">
+                          <a href="#" class="table-show-link">
+                            <i class="las la-eye"></i>
+                          </a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
               </div>
             </div>
-            <div class="terms-cont">
-              <div class="check-group">
-                <div class="check-width">
-                  <label class="check-label">
-                    <input type="checkbox" checked="checked" />
-                    <span class="checkmark custom-checkmark"></span>
-                  </label>
-                </div>
-              </div>
-              <span class="terms-text">أوافق على الشروط والأحكام</span>
-            </div>
-            <button class="apply-btn">تسجيل</button>
-          </form>
+          </div>
         </div>
       </div>
     </section>

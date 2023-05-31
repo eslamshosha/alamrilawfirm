@@ -10,10 +10,6 @@
     <link rel="stylesheet" href="css/line-awesome.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/bootstrap-rtl.min.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/animate.css" />
     <link rel="stylesheet" href="css/swiper.min.css" />
@@ -141,6 +137,7 @@
     <!-- breadcrumb section -->
     <section class="breadcrumb-sec">
       <div class="container">
+        <h2 class="page-head">حسابي</h2>
         <ol class="breadcrumb">
           <li class="item-home">
             <a class="bread-link bread-home aFixx" href="index.html"
@@ -148,7 +145,7 @@
             </a>
           </li>
           <li class="active item-23">
-            <span class="bread-current"> تسجيل جديد</span>
+            <span class="bread-current"> حسابي</span>
           </li>
         </ol>
       </div>
@@ -157,87 +154,178 @@
     <!-- contact-section -->
     <section class="single-page">
       <div class="container">
-        <div class="form-cont">
-          <h2 class="form-head wow fadeInDown" wow-data-delay="5s">
-            تسجيل جديد
-          </h2>
-          <form action="">
-            <div class="group-input grid-group custom-tel">
-              <div class="form-group">
-                <label class="form-label required">الاسم الأول</label>
-                <input type="text" class="form-input custom-input" />
-              </div>
-              <div class="form-group">
-                <label class="form-label required">الاسم الأخير</label>
-                <input type="text" class="form-input custom-input" />
-              </div>
-              <div class="form-group">
-                <label class="form-label required">رقم الجوال</label>
-                <div class="form-input-relative">
-                  <input type="tel" class="tel-input form-input custom-input" />
-                  <span class="tel-lang"> 996+ </span>
-                </div>
-              </div>
-              <div class="form-group">
-                <label class="form-label required">البريد الإلكتروني</label>
-                <input type="email" class="form-input custom-input" />
-              </div>
-              <div class="form-group">
-                <label class="form-label required">الجنس</label>
-                <div class="form-input-relative">
-                  <i class="las la-angle-down angle-select"></i>
-                  <select class="select_input custom-input" name="">
-                    <option disabled selected hidden>اختر من القائمة</option>
-                    <option value="one">ذكر</option>
-                    <option value="two">انثي</option>
-                  </select>
-                </div>
-              </div>
-              <div class="form-group">
-                <label class="form-label required">المدينة</label>
-                <div class="form-input-relative">
-                  <i class="las la-angle-down angle-select"></i>
-                  <select class="select_input custom-input" name="">
-                    <option disabled selected hidden>اختر من القائمة</option>
-                    <option value="one">sa</option>
-                    <option value="two">sa</option>
-                  </select>
-                </div>
-              </div>
-              <div class="form-group">
-                <label class="form-label required">كلمة المرور</label>
-                <div class="form-input-relative">
-                  <label class="password-show">
-                    <input type="checkbox" onchange="showPass(this)" />
-                    <i class="las la-eye"></i>
-                  </label>
-                  <input type="password" class="form-input custom-input" />
-                </div>
-              </div>
-              <div class="form-group">
-                <label class="form-label required">تأكيد كلمة المرور</label>
-                <div class="form-input-relative">
-                  <label class="password-show">
-                    <input type="checkbox" onchange="showPass(this)" />
-                    <i class="las la-eye"></i>
-                  </label>
-                  <input type="password" class="form-input custom-input" />
-                </div>
+        <div class="account-cont">
+          <div class="account-sidebar-cont">
+            <div class="account-sidebar">
+              <ul class="account-list">
+                <li>
+                  <a href="edit-user.html" class="account-ancor">
+                    <i class="las la-user"></i>
+                    <span>تعديل بيانات الحساب</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="book-appointment-edit.html"
+                    class="account-ancor active"
+                  >
+                    <i class="las la-calendar"></i>
+                    <span>حجوزاتي</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="account-ancor">
+                    <i class="las la-clipboard-list"></i>
+                    <span>طلباتي</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="account-ancor">
+                    <i class="las la-bell"></i>
+                    <span>الإشعارات</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="account-ancor">
+                    <i class="las la-address-book"></i>
+                    <span>دفتر العناوين</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="account-ancor">
+                    <i class="las la-gift"></i>
+                    <span>نقاطي</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="account-ancor">
+                    <i class="las la-wallet"></i>
+                    <span>المحفظة</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="account-ancor">
+                    <i class="las la-sign-out-alt"></i>
+                    <span>تسجيل خروج</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="account-details">
+            <div class="account-details-head">
+              <a href="book-appointment-edit.html" class="back-btn">
+                <i class="las la-arrow-right"></i>
+              </a>
+              <div class="account-details-title">
+                <span>تفاصيل الطلب</span>
+                <span>5025709</span>
               </div>
             </div>
-            <div class="terms-cont">
-              <div class="check-group">
-                <div class="check-width">
-                  <label class="check-label">
-                    <input type="checkbox" checked="checked" />
-                    <span class="checkmark custom-checkmark"></span>
-                  </label>
-                </div>
-              </div>
-              <span class="terms-text">أوافق على الشروط والأحكام</span>
+            <div class="account-items-cont">
+              <ul class="account-details-cont">
+                <li class="account-details-item">
+                  <span class="account-details-name"> رقم الطلب</span>
+                  <span class="account-details-value"> 5025709 </span>
+                </li>
+                <li class="account-details-item">
+                  <span class="account-details-name">
+                    تاريخ ووقت إنشاء الطلب</span
+                  >
+                  <span class="account-details-value">
+                    2023/01/26 - 13:42
+                  </span>
+                </li>
+                <li class="account-details-item">
+                  <span class="account-details-name"> اسم الدورة </span>
+                  <span class="account-details-value">
+                    أساسيات القانون الدولي
+                  </span>
+                </li>
+                <li class="account-details-item">
+                  <span class="account-details-name"> سعر الدورة</span>
+                  <span class="account-details-value"> 2500 ر.س</span>
+                </li>
+                <li class="account-details-item">
+                  <span class="account-details-name"> النقاط المكتسبة</span>
+                  <span class="account-details-value"> 120</span>
+                </li>
+                <li class="account-details-item">
+                  <span class="account-details-name"> حالة الطلب</span>
+                  <span class="account-details-value"> في الإنتظار</span>
+                </li>
+              </ul>
             </div>
-            <button class="apply-btn">تسجيل</button>
-          </form>
+            <div class="account-items-cont">
+              <div class="account-items-head">تفاصيل الدفع</div>
+              <ul class="account-details-cont">
+                <li class="account-details-item">
+                  <span class="account-details-name"> طريقة الدفع</span>
+                  <span class="account-details-value"> فيزا </span>
+                </li>
+                <li class="account-details-item">
+                  <span class="account-details-name"> المبلغ المدفوع</span>
+                  <span class="account-details-value"> 2570.5 ر.س </span>
+                </li>
+                <li class="account-details-item">
+                  <span class="account-details-name"> تاريخ ووقت الدفع </span>
+                  <span class="account-details-value">
+                    2023/01/26 - 13:42
+                  </span>
+                </li>
+                <li class="account-details-item">
+                  <span class="account-details-name"> الفاتورة الضريبية</span>
+                  <a href="#" class="account-external-link"> تحميل</a>
+                </li>
+              </ul>
+            </div>
+            <div class="account-items-cont last-items-cont">
+              <div class="account-items-head">تفاصيل الإجمالي</div>
+              <ul class="account-details-cont">
+                <li class="account-details-item">
+                  <span class="account-details-name"> تكلفة الطلب</span>
+                  <span class="account-details-value"> 2500 ر.س </span>
+                </li>
+                <li class="account-details-item">
+                  <span class="account-details-name"> خصم كوبون التخفيض</span>
+                  <span class="account-details-value"> 50 ر.س </span>
+                </li>
+                <li class="account-details-item">
+                  <span class="account-details-name"> إجمالي التكلفة بعد الخصم</span>
+                  <span class="account-details-value">
+                    2450 ر.س
+                  </span>
+                </li>
+                <li class="account-details-item">
+                  <span class="account-details-name"> ضريبة القيمة المضافة</span>
+                  <span class="account-details-value">
+                    370.5 ر.س
+                  </span>
+                </li>
+                <li class="account-details-item">
+                  <span class="account-details-name"> إجمالي التكلفة بالضريبة</span>
+                  <span class="account-details-value">
+                    2840.5 ر.س
+                  </span>
+                </li>
+                <li class="account-details-item">
+                  <span class="account-details-name"> رصيد المحفظة المستخدم</span>
+                  <span class="account-details-value">
+                    250 ر.س
+                  </span>
+                </li>
+                <li class="account-details-item items-padding">
+                  <span class="account-details-name"> إجمالي المستحق</span>
+                  <span class="account-details-value">
+                    2570.5 ر.س
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <div class="Report-btn">
+              ابلاغ عن مشكلة
+            </div>
+          </div>
         </div>
       </div>
     </section>
