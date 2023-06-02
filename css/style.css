@@ -5377,7 +5377,6 @@ html[dir="ltr"] .back-btn i {
   align-items: center;
   justify-content: flex-start;
   gap: 12px;
-  margin-bottom: 30px;
 }
 .account-details-title {
   font-weight: 700;
@@ -5406,7 +5405,7 @@ html[dir="ltr"] .back-btn i {
   margin-bottom: 15px;
 }
 .account-details-name {
-  min-width: 200px;
+  min-width: 220px;
   font-weight: 700;
   font-size: 16px;
   color: #4c4c4c;
@@ -5454,6 +5453,62 @@ html[dir="ltr"] .back-btn i {
   background-color: var(--main-hover);
   color: var(--white-color);
 }
+.account-details-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.printed-product-cont {
+  margin-bottom: 15px;
+}
+.rate-product{
+  margin-bottom: 25px;
+}
+.product-name {
+  font-weight: 700;
+  font-size: 14px;
+  color: #4c4c4c;
+}
+.rate {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: row-reverse;
+  gap: 4px;
+}
+.rate:not(:checked) > input {
+  position: absolute;
+  top: -9999px;
+}
+.rate:not(:checked) > label {
+  cursor: pointer;
+  font-size: 30px;
+  color: #d9d9d9;
+  margin: 0;
+}
+.rate:not(:checked) > label:before {
+  content: "\f005";
+  font-family: "Line Awesome Free";
+  font-weight: bold;
+}
+.rate > input:checked ~ label {
+  color: #ffc700;
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+  color: #deb217;
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+  color: #c59b08;
+}
+.model-input textarea.custom-input{
+  height: 101px;
+}
 @media (max-width: 1199px) {
   .table-groub table {
     width: 1115px;
@@ -5476,5 +5531,10 @@ html[dir="ltr"] .back-btn i {
   }
   .account-details-value {
     font-size: 14px;
+  }
+  .account-details-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
   }
 }
