@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="css/line-awesome.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/bootstrap-rtl.min.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/animate.css" />
     <link rel="stylesheet" href="css/swiper.min.css" />
@@ -165,28 +169,28 @@
                   </a>
                 </li>
                 <li>
-                  <a
-                    href="book-appointment-edit.html"
-                    class="account-ancor"
-                  >
+                  <a href="book-appointment-edit.html" class="account-ancor">
                     <i class="las la-calendar"></i>
                     <span>حجوزاتي</span>
                   </a>
                 </li>
                 <li>
-                  <a href="orders-printed-product-details.html" class="account-ancor  active">
+                  <a
+                    href="orders-printed-product-details.html"
+                    class="account-ancor"
+                  >
                     <i class="las la-clipboard-list"></i>
                     <span>طلباتي</span>
                   </a>
                 </li>
                 <li>
-                  <a href="#" class="account-ancor">
+                  <a href="notifications.html" class="account-ancor">
                     <i class="las la-bell"></i>
                     <span>الإشعارات</span>
                   </a>
                 </li>
                 <li>
-                  <a href="#" class="account-ancor">
+                  <a href="address-book.html" class="account-ancor active">
                     <i class="las la-address-book"></i>
                     <span>دفتر العناوين</span>
                   </a>
@@ -214,162 +218,81 @@
           </div>
           <div class="account-details">
             <div class="account-details-header">
-              <div class="account-details-head">
-                <a href="booking-appointment-edit.html" class="back-btn">
-                  <i class="las la-arrow-right"></i>
-                </a>
-                <div class="account-details-title">
-                  <span>تفاصيل الطلب </span>
-                  <span>5025709</span>
+              <h2 class="form-head wow fadeInDown" wow-data-delay="5s">
+                دفتر العناوين
+              </h2>
+              <div class="notif-head">
+                <div class="Report-btn action-btn">اضافة عنوان جديد</div>
+              </div>
+            </div>
+            <div class="address-cont">
+              <div class="address-item">
+                <div class="address-info">
+                  <span class="address-item-name">
+                    حي البساتين - جدة - كوبري الصالة الكبرى
+                  </span>
+                  <span class="address-item-name"> 0540000000 </span>
+                  <span class="address-item-name">
+                    24.667277670180287, 46.74848448650808
+                  </span>
+                </div>
+                <div class="btn_group">
+                  <button class="btn_address btn_color1 active">
+                    <span>تعيين إفتراضي</span><i class="las la-check"></i>
+                  </button>
+                  <button class="btn_address btn_color2">
+                    <span>تعديل</span><i class="las la-pen"></i>
+                  </button>
+                  <button class="btn_address btn_color3">
+                    <span>حذف</span><i class="las la-trash-alt"></i>
+                  </button>
                 </div>
               </div>
-              <div
-                class="Report-btn"
-                data-toggle="modal"
-                data-target="#custom-modal"
-              >
-                تقييم الطلب
-              </div>
-            </div>
-            <div class="account-items-cont">
-              <ul class="account-details-cont">
-                <li class="account-details-item">
-                  <span class="account-details-name"> رقم الطلب </span>
-                  <span class="account-details-value"> 5025709 </span>
-                </li>
-                <li class="account-details-item">
-                  <span class="account-details-name">
-                    تاريخ ووقت إنشاء الطلب</span
-                  >
-                  <span class="account-details-value">
-                    2023/01/26 - 13:42
+              <div class="address-item">
+                <div class="address-info">
+                  <span class="address-item-name">
+                    حي البساتين - جدة - كوبري الصالة الكبرى
                   </span>
-                </li>
-                <li class="account-details-item">
-                  <span class="account-details-name"> قيمة الطلب</span>
-                  <span class="account-details-value"> 2500 ر.س</span>
-                </li>
-                <li class="account-details-item">
-                  <span class="account-details-name"> حالة الطلب</span>
-                  <span class="account-details-value"> تم الإنتهاء</span>
-                </li>
-              </ul>
-            </div>
-            <div class="account-items-cont">
-              <div class="account-items-head">تفاصيل المنتجات</div>
-              <div class="printed-product-cont">
-                <div class="checkout-product">
-                  <figure>
-                    <img src="images/products-post/01.jpg" class="img-fluid" />
-                  </figure>
-                  <div class="checkout-info-flex">
-                    <span class="checkout-info-name"
-                      >الوجيز في القانون الإداري السعودي</span
-                    >
-                    <span class="checkout-info-points"
-                      >النقاط المكتسبة:
-                      <span>120</span>
-                    </span>
-                    <span class="checkout-price">
-                      <span class="product-counter">x <span>1</span></span>
-                      2500 ر.س
-                    </span>
-                  </div>
+                  <span class="address-item-name"> 0540000000 </span>
+                  <span class="address-item-name">
+                    24.667277670180287, 46.74848448650808
+                  </span>
+                </div>
+                <div class="btn_group">
+                  <button class="btn_address btn_color1">
+                    <span>تعيين إفتراضي</span><i class="las la-check"></i>
+                  </button>
+                  <button class="btn_address btn_color2">
+                    <span>تعديل</span><i class="las la-pen"></i>
+                  </button>
+                  <button class="btn_address btn_color3">
+                    <span>حذف</span><i class="las la-trash-alt"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="address-item">
+                <div class="address-info">
+                  <span class="address-item-name">
+                    حي البساتين - جدة - كوبري الصالة الكبرى
+                  </span>
+                  <span class="address-item-name"> 0540000000 </span>
+                  <span class="address-item-name">
+                    24.667277670180287, 46.74848448650808
+                  </span>
+                </div>
+                <div class="btn_group">
+                  <button class="btn_address btn_color1">
+                    <span>تعيين إفتراضي</span><i class="las la-check"></i>
+                  </button>
+                  <button class="btn_address btn_color2">
+                    <span>تعديل</span><i class="las la-pen"></i>
+                  </button>
+                  <button class="btn_address btn_color3">
+                    <span>حذف</span><i class="las la-trash-alt"></i>
+                  </button>
                 </div>
               </div>
             </div>
-            <div class="account-items-cont">
-              <div class="account-items-head">تفاصيل الشحن</div>
-              <ul class="account-details-cont">
-                <li class="account-details-item">
-                  <span class="account-details-name"> اسم العنوان</span>
-                  <span class="account-details-value"> حي البساتين</span>
-                </li>
-                <li class="account-details-item">
-                  <span class="account-details-name"> المدينة</span>
-                  <span class="account-details-value"> جدة</span>
-                </li>
-                <li class="account-details-item">
-                  <span class="account-details-name"> رقم الجوال</span>
-                  <span class="account-details-value"> 0540000000</span>
-                </li>
-                <li class="account-details-item">
-                  <span class="account-details-name"> الموقع على الخريطة</span>
-                  <a href="#" class="account-external-link"> عرض على الخريطة</a>
-                </li>
-                <li class="account-details-item">
-                  <span class="account-details-name"> وصف مميز للعنوان</span>
-                  <span class="account-details-value">
-                    حي البساتين - كوبري الصالة الكبرى</span
-                  >
-                </li>
-              </ul>
-            </div>
-            <div class="account-items-cont">
-              <div class="account-items-head">تفاصيل الدفع</div>
-              <ul class="account-details-cont">
-                <li class="account-details-item">
-                  <span class="account-details-name"> طريقة الدفع</span>
-                  <span class="account-details-value"> فيزا </span>
-                </li>
-                <li class="account-details-item">
-                  <span class="account-details-name"> المبلغ المدفوع</span>
-                  <span class="account-details-value"> 2570.5 ر.س </span>
-                </li>
-                <li class="account-details-item">
-                  <span class="account-details-name"> تاريخ ووقت الدفع </span>
-                  <span class="account-details-value">
-                    2023/01/26 - 13:42
-                  </span>
-                </li>
-                <li class="account-details-item">
-                  <span class="account-details-name"> الفاتورة الضريبية</span>
-                  <a href="#" class="account-external-link"> تحميل</a>
-                </li>
-              </ul>
-            </div>
-            <div class="account-items-cont last-items-cont">
-              <div class="account-items-head">تفاصيل الإجمالي</div>
-              <ul class="account-details-cont">
-                <li class="account-details-item">
-                  <span class="account-details-name"> تكلفة الطلب</span>
-                  <span class="account-details-value"> 2500 ر.س </span>
-                </li>
-                <li class="account-details-item">
-                  <span class="account-details-name"> خصم كوبون التخفيض</span>
-                  <span class="account-details-value"> 50 ر.س </span>
-                </li>
-                <li class="account-details-item">
-                  <span class="account-details-name">
-                    إجمالي التكلفة بعد الخصم</span
-                  >
-                  <span class="account-details-value"> 2450 ر.س </span>
-                </li>
-                <li class="account-details-item">
-                  <span class="account-details-name">
-                    ضريبة القيمة المضافة</span
-                  >
-                  <span class="account-details-value"> 370.5 ر.س </span>
-                </li>
-                <li class="account-details-item">
-                  <span class="account-details-name">
-                    إجمالي التكلفة بالضريبة</span
-                  >
-                  <span class="account-details-value"> 2840.5 ر.س </span>
-                </li>
-                <li class="account-details-item">
-                  <span class="account-details-name">
-                    رصيد المحفظة المستخدم</span
-                  >
-                  <span class="account-details-value"> 250 ر.س </span>
-                </li>
-                <li class="account-details-item items-padding">
-                  <span class="account-details-name"> إجمالي المستحق</span>
-                  <span class="account-details-value"> 2570.5 ر.س </span>
-                </li>
-              </ul>
-            </div>
-            <div class="Report-btn">ابلاغ عن مشكلة</div>
           </div>
         </div>
       </div>
@@ -521,62 +444,5 @@
     <script src="js/wow.min.js"></script>
     <script src="js/swiper.min.js"></script>
     <script src="js/script.js"></script>
-
-    <!-- Start custom Modal -->
-    <div class="modal fade custom-modal" id="custom-modal" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">تقييم الطلب</h5>
-            <button type="button" class="close" data-dismiss="modal">
-              <i class="las la-times"></i>
-            </button>
-          </div>
-          <div class="modal-body">
-            <form action="">
-              <div class="model-input">
-                <div class="rate-product">
-                  <div class="checkout-product">
-                    <figure>
-                      <img
-                        src="images/products-post/01.jpg"
-                        class="img-fluid"
-                      />
-                    </figure>
-                    <div class="checkout-info-flex">
-                      <span class="product-name"
-                        >الوجيز في القانون الإداري السعودي</span
-                      >
-                      <span class="rate-cont">
-                        <div class="rate">
-                          <input type="radio" id="star5" name="rate" value="5" />
-                          <label for="star5" title="text"></label>
-                          <input type="radio" id="star4" name="rate" value="4" />
-                          <label for="star4" title="text"></label>
-                          <input type="radio" id="star3" name="rate" value="3" />
-                          <label for="star3" title="text"></label>
-                          <input type="radio" id="star2" name="rate" value="2" />
-                          <label for="star2" title="text"></label>
-                          <input type="radio" id="star1" name="rate" value="1" />
-                          <label for="star1" title="text"></label>
-                        </div>
-                      </span>
-                    </div>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label class="form-label">ملاحظات</label>
-                  <textarea class="form-input custom-input"></textarea>
-                </div>
-                <div class="btn-cont">
-                  <button class="custom-btn">ارسال</button>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- End custom Modal -->
   </body>
 </html>
