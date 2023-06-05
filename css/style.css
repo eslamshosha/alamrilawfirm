@@ -3263,7 +3263,7 @@ label.required::after {
   }
   .group-input-flex {
     flex-direction: column;
-    gap: 0;
+    /* gap: 0; */
   }
   /* Track */
   .progressbar::-webkit-scrollbar-track {
@@ -3283,7 +3283,7 @@ label.required::after {
     width: 100%;
   }
   textarea.form-input {
-    line-height: unset;
+    line-height: 15px;
   }
   .wizard .wizard-body {
     padding: 30px 20px;
