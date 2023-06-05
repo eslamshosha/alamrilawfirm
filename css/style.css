@@ -5695,4 +5695,11 @@ html[dir="ltr"] .back-btn i {
   .pay-check .check-width {
     width: 100%;
   }
+  .model-input .group-input-flex{
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  .group-input-flex .form-group{
+    margin-bottom: 0;
+  }
 }
