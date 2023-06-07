@@ -358,10 +358,12 @@ $(document).ready(function () {
 
   $(".other-option input:radio").change(function () {
     if (this.checked) {
-      console.log("1");
-      $(".other-option-input input").prop("disabled", false);
+      // $(".other-option-input input").prop("disabled", false);
       $(".other-option-input input").focus();
     }
+  });
+  $(".other-option-input input").focus(function () {
+    $(".other-option input:radio").prop("checked", true);
   });
 
   // collapse~~~~~~~~
