@@ -689,7 +689,6 @@ html[dir="rtl"] .about-name {
   user-select: none;
   width: 100%;
   height: 80px;
-  background-color: red;
   background-position: right;
   background-image: url(../images/company-bg.png);
 }
